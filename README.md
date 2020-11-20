@@ -17,5 +17,39 @@ First i will make a new weighted_graph and new weighted_graph_algorithms and i w
         weighted_graph ExampleGraph = new WGraph_DS();
         weighted_graph_algorithms AlgoExGraph = new WGraph_Algo();
         AlgoExGraph.init(ExampleGraph);
-        ```
-Now i will 
+```       
+Now i will add nodes, remove node, connect between nodes and remove edge between two nodes and i will print the number of nodes and number of edges:
+```bash
+        ExampleGraph.addNode(1);
+        ExampleGraph.addNode(2);
+        ExampleGraph.addNode(3);
+        ExampleGraph.addNode(4);
+        ExampleGraph.removeNode(4);
+        ExampleGraph.connect(1,2,3);
+        ExampleGraph.connect(1,3,4);
+        ExampleGraph.connect(2,3,5);
+        ExampleGraph.removeEdge(1,3);
+        System.out.println(ExampleGraph.edgeSize());
+        System.out.println(ExampleGraph.nodeSize());
+```
+This time i will show how to set tag and info and then print them:
+```bash
+       ExampleGraph.getNode(1).setTag(8);
+       ExampleGraph.getNode(1).setInfo("red");
+       System.out.println(ExampleGraph.getNode(1).getInfo());
+       System.out.println(ExampleGraph.getNode(1).getTag());
+```
+And for the algorithms section i will show how to check if the graph is connected, how to check the shortest path  and the shortest path distance
+between two nodes, in addition to that i will show how to save and load the graph:
+```bash
+        System.out.println(AlgoExGraph.isConnected());
+        System.out.println(AlgoExGraph.shortestPathDist(1,3));
+        for (int i=0; i<3; i++){
+            System.out.println(AlgoExGraph.shortestPath(1,3).get(i).getKey());
+        }
+        weighted_graph CopyGraph = AlgoExGraph.copy();
+        AlgoExGraph.save("C:\\Java Examples\\ExampleGraph.txt");
+        AlgoExGraph.load("C:\\Java Examples\\ExampleGraph.txt");
+```
+ Now i will show the graph in the code:
+ ![ExampleGraphImage](https://ibb.co/4pVwmw9)
