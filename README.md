@@ -18,3 +18,4 @@ First i will make a new weighted_graph and new weighted_graph_algorithms and i w
         weighted_graph_algorithms AlgoExGraph = new WGraph_Algo();
         AlgoExGraph.init(ExampleGraph);
         ```
+Now i will 
