@@ -52,4 +52,4 @@ between two nodes, in addition to that i will show how to save and load the grap
         AlgoExGraph.load("C:\\Java Examples\\ExampleGraph.txt");
 ```
  Now i will show the graph in the code:
- ![ExampleGraphImage](https://ibb.co/4pVwmw9)
+ ![ExampleGraphImage](https://pasteboard.co/JBfzehx.png)
