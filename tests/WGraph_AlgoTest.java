@@ -1,10 +1,11 @@
-package ex1;
+package ex1.tests;
 
+import ex1.src.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static ex1.WGraph_DSTest.creator;
+import static ex1.tests.WGraph_DSTest.creator;
 import static org.junit.jupiter.api.Assertions.*;
 
 class WGraph_AlgoTest {
@@ -57,9 +58,9 @@ class WGraph_AlgoTest {
         weighted_graph sl = creator();
         weighted_graph_algorithms sl1 = new WGraph_Algo();
        sl1.init(sl);
-       sl1.save("C:\\Users\\avi alfasi\\Desktop\\\u200F\u200Fתיקיה חדשה (9)\\graphtest.txt");
+       sl1.save("graphtest.txt");
        weighted_graph_algorithms forload1 = new WGraph_Algo();
-       forload1.load("C:\\Users\\avi alfasi\\Desktop\\\u200F\u200Fתיקיה חדשה (9)\\graphtest.txt");
+       forload1.load("graphtest.txt");
        assertEquals(sl1.getGraph(), forload1.getGraph());
     }
 }

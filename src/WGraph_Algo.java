@@ -1,4 +1,4 @@
-package ex1;
+package ex1.src;
 
 import java.io.*;
 import java.util.Iterator;
@@ -182,7 +182,7 @@ public class WGraph_Algo implements weighted_graph_algorithms {
     public boolean save(String file) {
         try {
             //Saving of object in a file
-            FileOutputStream filen = new FileOutputStream(file, true);
+            FileOutputStream filen = new FileOutputStream(file);
             ObjectOutputStream out = new ObjectOutputStream(filen);
             // Method for serialization of object
             out.writeObject(algo);
